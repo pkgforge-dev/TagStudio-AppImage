@@ -9,9 +9,9 @@ export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=https://raw.githubusercontent.com/TagStudioDev/TagStudio/main/src/tagstudio/resources/icon.png
 export DESKTOP=https://raw.githubusercontent.com/TagStudioDev/TagStudio/main/src/tagstudio/resources/tagstudio.desktop
-export DEPLOY_OPENGL=1
-export DEPLOY_VULKAN=1
 export DEPLOY_QT=1
+# the app only needs the host GPU drivers, do not bundle mesa/vulkan
+export USE_HOST_DRIVERS_EXPERIMENTAL=1
 
 # Deploy dependencies
 quick-sharun \

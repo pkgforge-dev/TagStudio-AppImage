@@ -12,8 +12,6 @@ pacman -Syu --noconfirm \
   libvdpau \
   pipewire \
   qt6-base \
-  qt6-multimedia \
-  qt6-wayland \
   unrar
 
 echo "Installing debloated packages..."
